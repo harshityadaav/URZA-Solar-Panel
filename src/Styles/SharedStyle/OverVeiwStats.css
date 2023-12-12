@@ -1,0 +1,133 @@
+.overviewstats-box {
+    background-color: var(--primary-background);
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    padding-right: 3%;
+  }
+  .overviewbox
+   {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+  }
+  .statsbox{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .overviewbox img {
+    width: auto;
+    height: 70%;
+    flex-shrink: 0;
+    margin: 1rem 2rem;
+   padding-right:5% ;
+ 
+  }
+  .statsbox img {
+    width: auto;
+    height: 70%;
+    flex-shrink: 0;
+    margin: 1rem 2rem;
+   margin-right:15% ;
+ 
+  }
+  .overviewbox h1,
+  .statsbox h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 1rem 2rem;
+  }
+  
+  .overviewbox p,
+  .statsbox p {
+    width: 90%;
+    max-width: 100vw;
+    height: auto;
+    color: var(--htag-color);
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.33125rem;
+    margin: 1rem 2rem;
+  }
+
+  /* For Mobile Screen */
+@media screen and (max-width: 1020px){
+  .overviewstats-box {
+    background-color: var(--primary-background);
+    height: auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    padding: 2% 5%;
+  }
+  .overviewbox
+   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .statsbox{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .overviewbox img {
+    width: 100%;
+    height:auto;
+    flex-shrink: 0;
+    margin: 1rem 0rem;
+   padding-right:0%;
+ 
+  }
+  .statsbox img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    margin: 1rem 0rem;
+    margin-right:0%;
+ 
+  }
+  .overviewbox h1,
+  .statsbox h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--secondary);
+    margin: 1rem 0rem;
+  }
+  
+  .overviewbox p,
+  .statsbox p {
+    width: 100%;
+    height: auto;
+    color: var(--htag-color);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.33125rem;
+    margin: 1rem 0rem;
+  }
+}

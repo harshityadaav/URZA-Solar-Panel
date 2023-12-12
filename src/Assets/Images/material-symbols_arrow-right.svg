@@ -1,0 +1,18 @@
+<svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="102" height="102" fill="#F5F5F5"/>
+<g id="Desktop - 18" clip-path="url(#clip0_0_1)">
+<rect width="1440" height="5154" transform="translate(-1310 -2097)" fill="#212922"/>
+<rect id="Rectangle 98" x="-1310" y="-379" width="1440" height="859" fill="#9A998C"/>
+<g id="material-symbols:arrow-right">
+<path id="Vector" d="M42.5 72.25V29.75L63.75 51L42.5 72.25Z" fill="#F0F0E7"/>
+</g>
+<g id="material-symbols:arrow-right_2">
+<path id="Vector_2" d="M59.5 144.25V101.75L38.25 123L59.5 144.25Z" fill="#F0F0E8"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1440" height="5154" fill="white" transform="translate(-1310 -2097)"/>
+</clipPath>
+</defs>
+</svg>

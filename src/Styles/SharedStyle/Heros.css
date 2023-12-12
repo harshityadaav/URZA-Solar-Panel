@@ -1,0 +1,98 @@
+.herossection {
+  background-image: url("../../Assets/Images/Rectangle\ 2.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+}
+.herossection h1 {
+  color: var(--secondary);
+  font-size: 7.5rem;
+  padding-top: 36vh;
+  margin-left: 3rem;
+  width: 74rem;
+  height: 19.5rem;
+  display: flex;
+  font-weight: 500;
+  justify-content: flex-start;
+  align-items: center;
+  -webkit-text-stroke: 5px var(--secondary);
+  -webkit-text-fill-color: transparent;
+}
+
+.herossection .requestbtn {
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 14.3125rem;
+  height: 4.1875rem;
+  background-color: var(--secondary);
+  color: var(--primary-background);
+  margin-top:25vh;
+  margin-left: 3rem;
+  border-color: var(--secondary);
+  cursor: pointer;
+}
+.herossection .moreaboutbtn {
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 14.3125rem;
+  height: 4.1875rem;
+  color: var(--secondary);
+  background-color: transparent;
+  margin-top:25vh ;
+  margin-left: 2rem;
+  border-color: var(--secondary);
+  cursor: pointer;
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+  .herossection{
+      background-image: url("../../Assets/Images/Rectangle 2.jpg");
+      height: 257px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+  }
+  .herossection h1{
+     color: var(--secondary);
+     font-size: 30px;
+     height: 47px;
+     padding-top: 110px;
+     font-weight: 500;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      -webkit-text-stroke: 0.7px var(--secondary);
+      -webkit-text-fill-color: transparent;  
+  }
+  .herossection .requestbtn {
+    font-size: 15px;
+    font-weight: 500;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--secondary);
+    color: var(--primary-background);
+    margin-top:15%;
+    margin-left: 3rem;
+    border-color: var(--secondary);
+    cursor: pointer;
+    padding: 5px;
+  }
+  .herossection .moreaboutbtn {
+    font-size: 15px;
+    font-weight: 500;
+    width: fit-content;
+    height: fit-content;
+    color: var(--secondary);
+    background-color: transparent;
+    margin-top:15%;
+    margin-left: 1rem;
+    border-color: var(--secondary);
+    cursor: pointer;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+  padding-top: 1.2%;
+}
+.pc-logo{
+  height: 50px;
+  position: absolute;
+  margin-top: -1%;
+  left: 2%;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  right: 5%;
+ padding-top: 0%; 
+} 
+
+.nav_item {
+  margin-left: 20px;
+  display: inline;
+}
+
+a,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+} 
+.mobile-menu-icon {
+  display: none; /* Hide the icon by default on larger screens */
+}
+
+@media screen and (max-width: 1020px) {
+  /* Show the icon only on screens with a width of 768px or less */
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+   color: var(--secondary);
+   margin-top: 0;
+   font-size: 2rem;
+   margin-top: 1%;
+   position: absolute;
+   right: 3%;
+   display: flex;
+   height: 32px;
+  }
+
+  /* Hide the desktop navigation on mobile screens */
+  .nav-list {
+    display: none;
+  }
+  .mobile-logo{
+    position: absolute;
+    left: 4.5%;
+    height: 40px;
+    margin-top: 1.5%;
+  }
+}
+

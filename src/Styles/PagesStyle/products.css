@@ -1,0 +1,473 @@
+/************************************************ Hero ***************************************/
+.product-hero {
+  background-image: url("../../Assets/Images/Rectangle2.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+}
+.product-hero h1 {
+  color: var(--secondary);
+  font-size: 135px;
+  padding-top: 36vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-stroke: 5px var(--secondary);
+  -webkit-text-fill-color: transparent;
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px) {
+  .product-hero {
+    height: 257px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .product-hero h1 {
+    color: var(--secondary);
+    font-size: 48px;
+    height: 47px;
+    padding-top: 110px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 1.5px var(--secondary);
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/*************************************** SolarPhotovoltaic ***************************************/
+.solar-photo {
+  height: 100vh;
+  background-color: var(--primary-background);
+  display: flex;
+  scroll-snap-align: start;
+}
+.solar-photo-content {
+  width: 40%;
+  margin: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.solar-photo-content h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 3%;
+}
+.solar-photo-content p {
+  color: var(--primary);
+  margin: 3%;
+  font-weight: 300;
+}
+.Btn {
+  width: 15vw;
+  padding: 20px 15px;
+  background-color: var(--secondary);
+  color: #6b6b6b;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+}
+.photo-photo {
+  display: flex;
+  justify-content: right;
+}
+.photo1 {
+  height: 65vh;
+  margin-top: 17.5vh;
+  width: 19vw;
+}
+.photo2 {
+  height: 75vh;
+  margin-top: 12.5vh;
+  margin-right: 6%;
+  width: 27vw;
+}
+.photo3 {
+  height: 85vh;
+  margin-top: 7.5vh;
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px) {
+  .solar-photo {
+    height: auto;
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: start;
+    width: 100%;
+  }
+  .solar-photo-content {
+    width: 90%;
+    margin: 5%;
+    margin-top: 5%;
+    display: auto;
+    flex-direction: auto;
+    justify-content: center;
+  }
+  .solar-photo-content h1 {
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 5%;
+    display: flex;
+  }
+  .solar-photo-content p {
+    color: var(--primary);
+    font-weight: 300;
+    margin-top: 1%;
+  }
+  .photo-photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .photo1 {
+    height: 202.36px;
+    margin-top: 0;
+    width: 35vw;
+  }
+  .photo2 {
+    height: 239px;
+    margin-top: 0;
+    margin-right: 7.5vw;
+    margin-left: 7.5vw;
+    width: 35vw;
+  }
+  .photo3 {
+    height: 280px;
+    margin-top: 0;
+    width: 15vw;
+  }
+  .mobile-Btn {
+    background-color: var(--secondary);
+    color: #6b6b6b;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 10%, 0%;
+    margin-bottom: 20%;
+  }
+  .mobile-Btn img {
+    width: 30%;
+    margin-left: 5px;
+  }
+}
+/******************************** SolarThermotechnology *********************************/
+.solar-tero {
+  height: 100vh;
+  background-color: var(--secondary-background);
+  display: flex;
+  scroll-snap-align: start;
+}
+.tero-photo img {
+  height: 80vh;
+  margin-top: 10vh;
+  width: 35vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+.tero-content {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 0% 5%;
+}
+.tero-content h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.tero-content p {
+  color: var(--primary-background);
+  margin: 2%;
+  font-weight: 400;
+  padding-right: 7%;
+}
+.tero-content button {
+  margin-left: 1vw;
+}
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+  .solar-tero {
+    height: auto;
+    background-color: var(--secondary-background);
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5%;
+  }
+  .tero-photo img {
+    height: auto;
+    margin-top: 0;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+  }
+  
+  .tero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0%;
+  }
+  .tero-content h1 {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 3%;
+  }
+  .tero-content p {
+    color: var(--primary-background);
+    font-size: 16px;
+    margin: 0%;
+    font-weight: 400;
+    padding-right: 0%;
+  }
+  .mobile-Btn1 {
+    background-color: var(--secondary);
+    color: #6b6b6b;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-bottom: 5%;
+  }
+  .mobile-Btn1 img {
+    width: 30%;
+    margin-left: 5px;
+  }
+  
+}
+
+/*************************************** Pumping Solutions ***************************************/
+
+.pumping-solution {
+  height: 100vh;
+  background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  scroll-snap-align: start;
+}
+.pumping-solution h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+.pumping-photo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pumping-photo img {
+  height: 40vh;
+  width: 25vw;
+}
+.pumping-solution p {
+  color: var(--primary);
+  margin: 0% 7%;
+  font-weight: 300;
+}
+.pumping-solution button {
+  background-color: var(--secondary);
+  margin-left: 7%;
+  width: 15vw;
+  padding: 20px 15px;
+  background-color: var(--secondary);
+  color: #6b6b6b;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+  .pumping-solution {
+    height: auto;
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10% 5%;
+  }
+  .pumping-solution h1 {
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+  .pumping-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .pumping-photo img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .pumping-solution p {
+    color: var(--primary);
+    margin: 0% 0%;
+    font-weight: 300;
+  }
+  .pumping-solution button {
+    background-color: var(--secondary);
+    color: #6b6b6b;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-bottom: 5%;
+    margin-left: -0.1%;
+  }
+  .pumping-solution button img{
+    width: 30%;
+    margin-left: 5px;
+  }
+  
+}
+/*************************************** STPAndETP ***************************************/
+.set-etp {
+  height: 100vh;
+  background-color: var(--secondary-background);
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.set-etp img {
+  height: 80vh;
+  margin-left: 5vw;
+  z-index: 1;
+}
+.sAp-content {
+  width: 60vw;
+  background-color: var(--primary-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3% 4%;
+  margin-right: 5vw;
+  margin-left: -10vw;
+  z-index: 10;
+}
+.sAp-content h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  display: flex;
+}
+.sAp-content p {
+  color: var(--primary);
+  font-weight: 300;
+  margin-top: 5%;
+}
+.sAp-content button {
+  background-color: var(--secondary);
+  border: none;
+  margin-top: 5%;
+  width: 15vw;
+  padding: 20px 15px;
+  color: #6b6b6b;
+  font-size: large;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sAp-content button img {
+  height: 15px;
+  margin-left: 3px;
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+  .set-etp {
+    height: auto;
+    background-color: var(--secondary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10% 0;
+  }
+  .set-etp img {
+    width:90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 1;
+  }
+  .sAp-content {
+    width: 80%;
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3% 4%;
+    margin-left: 5%;
+    margin-top: -20%;
+    z-index: 10;
+    text-align: center;
+    align-items: center;
+  }
+  .sAp-content h1 {
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+  }
+  .sAp-content p {
+    color: var(--primary);
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 5%;
+  }
+  .sAp-content button {
+    background-color: var(--secondary);
+    color: #6b6b6b;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-bottom: 5%;
+  }
+  .sAp-content button img {
+    width: 30%;
+    margin-left: 5px;
+  }
+}

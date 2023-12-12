@@ -1,0 +1,193 @@
+.main {
+  display: flex;
+  background-image: url("../../Assets/Images/Rectangle\ 67.svg");
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  width: 20%;
+}
+
+.sidebar .lottie {
+  width: 30%;
+}
+
+.ContacttUs {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--primary);
+  text-align: start;
+  position: relative;
+  top: 10%;
+  height: 80%;
+}
+
+.ContacttUs input[type="text"],
+.ContacttUs input[type="email"] {
+  width: 100%;
+  font-size: 0.875rem;
+  border: none;
+  color: var(--primary-background);
+  border-bottom: 0.02rem solid var(--primary-background);
+  opacity: 0.4;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+.ContacttUs input[type="text"]::placeholder,
+.ContacttUs input[type="email"]::placeholder {
+  color: var(--primary-background) !important;
+}
+input::placeholder{
+  color: var(--primary-background);
+}
+input:focus {
+  outline: none;
+}
+.yellow-text {
+  color: var(--secondary);
+}
+
+.ContacttUs h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--primary-background);
+}
+
+.ContacttUs p {
+  font-size: 0.875rem;
+  color: var(--primary-background);
+}
+
+.ContacttUs .submit {
+  background-color: var(--primary-background);
+  color: var(--primary);
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+}
+
+.map-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  position: relative;
+  margin-right: 10%;
+  top: 10%;
+  height: 80%;
+  background-color: var(--secondary-background);
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../Assets/Images/Rectangle\ 67.svg");
+    width: 100%;
+    height: auto;
+    padding-top: 20%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .ContacttUs {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--primary);
+    text-align: start;
+    position: relative;
+    top: 10%;
+    height: 382px;
+    margin-left: 5%;
+  }
+
+  .ContacttUs input[type="text"],
+  .ContacttUs input[type="email"] {
+    width: 100%;
+    font-size: 0.875rem;
+    border: none;
+    color: var(--primary-background);
+    border-bottom: 0.02rem solid var(--primary-background);
+    opacity: 0.4;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .ContacttUs input[type="text"]::placeholder,
+  .ContacttUs input[type="email"]::placeholder {
+    color: var(--primary-background) !important;
+    opacity: 1 !important;
+  }
+  input:focus {
+    outline: none;
+  }
+  .yellow-text {
+    color: var(--secondary);
+  }
+
+  .ContacttUs h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-background);
+  }
+
+  .ContacttUs p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-background);
+  }
+
+  .ContacttUs .submit {
+    background-color: var(--primary-background);
+    color: var(--primary);
+    width: 100%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0;
+    font-size: 0.875rem;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+  }
+
+  .map-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    position: relative;
+    margin-left: 5%;
+    top: 10%;
+    height: 241px;
+    background-color: var(--secondary-background);
+  }
+  .lottie{
+    display: flex;
+    margin-top: 10%;
+    background-color: var(--secondary);
+    justify-content: center;
+    align-items: center;
+  }
+}

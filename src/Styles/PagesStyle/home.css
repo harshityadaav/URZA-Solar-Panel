@@ -1,0 +1,1210 @@
+/************************************************ Hero ***************************************/
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url("../../Assets/Images/Rectangle\ 2\ \(1\).jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.heading {
+  font-size: 280%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  color: var(--primary);
+  height: 90vh;
+  padding-left: 2vw;
+  padding-right: 1.5vw;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+.box {
+  padding: 1% 1.5%;
+  min-width: 25%;
+  max-width: 35%;
+  min-height: 85vh;
+  margin-top: 3%;
+  color: var(--primary);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box h1 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.box button {
+  margin-left: -0.00%;
+}
+
+.box b {
+  color: var(--secondary);
+}
+
+.Btn {
+  width: 15vw;
+  padding: 20px 15px;
+  background-color: var(--secondary);
+  color: #6b6b6b;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Btn img {
+  margin-left: 5%;
+}
+
+.icon-options {
+  color: var(--primary);
+  height: 80vh;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side-icons {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  row-gap: 1rem;
+  align-items: flex-end;
+}
+
+.iconClass{
+  width: 60%;
+  height: 3rem;
+  padding: 1rem;
+  box-sizing: content-box;
+}
+.icon {
+  background-color: var(--secondary);
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.address-text{
+  width: 70%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .3rem;
+  background: var(--secondary-background);
+  color: var(--primary);
+}
+
+/* For mobile screen */
+
+@media screen and (max-width: 1020px){
+  .hero {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background-image: url("../../Assets/Images/Rectangle\ 2\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .heading{
+    display: none;
+  }
+  .box {
+    height: auto;
+    min-width: 100%;
+    max-width: 100%;
+    color: var(--primary);
+    background: transparent;
+    backdrop-filter: blur(0px);
+    display: block;
+    margin-top: 4.5vh;
+    min-height: auto;
+  }
+  
+  .box h1 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+  }
+  .box p{
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+  .box b {
+    color: var(--secondary);
+    margin-bottom: 5%;
+  }
+  
+  .box button{
+    display: none;
+  }
+  .box button {
+    margin-left: 0vw;
+      background-color: var(--secondary);
+        color: #6b6b6b;
+        border: none;
+        padding: 10px;
+        font-size: 10px;
+        font-weight: 300;
+        display: flex;
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+  }
+  
+  .box button img{
+    width: 30%;
+    margin-left: 5px;
+  }
+  .icon-options {
+    color: var(--primary);
+    height: auto;
+    margin-left: 0%;
+    display: block;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
+  
+  .icon-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 7%;
+  }
+  
+  .side-icons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    row-gap: 0.5rem;
+    align-items: flex-end;
+    top: 20%;
+  }
+  
+  .iconClass{
+    width: 50%;
+    height: 2rem;
+    padding: 0.5rem;
+    box-sizing: content-box;
+  }
+  .icon {
+    background-color: var(--secondary);
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+  }
+  
+  
+  .address-text{
+    width: 70%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem;
+    background: var(--secondary-background);
+    color: var(--primary);
+  }
+  .side-icons{
+    margin-top: 20vh;
+  }
+}
+
+/************************************ Our Mission And Vision ***************************************/
+.our {
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.our-vision {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.our-vision::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Assets/Images/SOLAR RESIDENTIAL.svg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  transition: filter 0.3s ease;
+}
+
+.our-vision:hover::before {
+ filter: brightness(40%);
+}
+
+.our-mission {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.our-mission::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Assets/Images/Rectangle\ 14.png");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  transition: filter 0.3s ease;
+}
+
+.our-mission:hover::before {
+  filter: brightness(40%);
+}
+
+
+.our-mission h1,
+.our-vision h1 {
+  font-weight: 500;
+  font-size: 2.3rem;
+  border-bottom: 2px solid var(--secondary);
+  margin-bottom: 3vh;
+  margin-top: 2vh;
+}
+
+.our-mission p,
+.our-vision p {
+  color: var(--primary);
+  font-weight: 300;
+  width: 80%;
+  margin-bottom: 2vh;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+  .our {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .our-vision {
+    position: relative;
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .our-vision::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Assets/Images/SOLAR RESIDENTIAL.svg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .our-vision:hover::before {
+    filter: brightness(40%);
+  
+  }
+  .our-vision button, .our-mission button{
+    background-color: var(--secondary);
+      color: #6b6b6b;
+      border: none;
+      padding: 10px;
+      font-size: 10px;
+      font-weight: 300;
+      display: flex;
+      margin-top: 5px;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+  }
+  .our-vision button img, .our-mission button img{
+    width: 30%;
+    margin-left: 5%;
+  }
+  
+  .our-mission {
+    position: relative;
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .our-mission::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Assets/Images/Rectangle\ 14.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .our-mission:hover::before {
+    filter: brightness(40%);
+  }
+  
+  
+  .our-mission h1,
+  .our-vision h1 {
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 2px solid var(--secondary);
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+  }
+  
+  .our-mission p,
+  .our-vision p {
+    color: var(--primary);
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: 10%;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: 100%;
+  }
+}
+/*********************************** Our Achivements ***************************************/
+.our-achivements {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Assets/Images/Achivements.svg");
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+}
+
+.section1 {
+  width: 50vw;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3.5vw;
+}
+
+.subsection1 {
+  width: 80%;
+}
+
+.subsection1 h1 {
+  font-weight: 450;
+  font-size: 2rem;
+}
+
+.subsection1 p {
+  font-weight: 300;
+}
+
+.subsection1 button {
+  margin-left: -0.6%;
+}
+
+.element {
+  margin: 20px 0;
+  width: 40vw;
+}
+
+
+.section2 {
+  width: 55%;
+  color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  float: left;
+  overflow: hidden;
+  height: 85vh;
+  margin-right: 5vw;
+}
+
+.subsection {
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50vw;
+  height: 150px;
+}
+
+.circle-container {
+  z-index: 100;
+  width: 50%;
+  text-align: right;
+  position: absolute;
+  left: 7rem;
+}
+
+.circle {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: var(--primary-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid var(--secondary);
+}
+
+.circle h1 {
+  color: var(--primary);
+}
+
+.subsection p {
+  background-color: var(--secondary-background);
+  padding: 0.9rem;
+  padding-left: 5rem;
+  border: 2px solid var(--secondary);
+  border-radius: 0 50px 50px 0;
+  margin-left: 10rem;
+  margin-right: 3vw;
+  width: 40vw;
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+  .our-achivements {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../Assets/Images/Achivements.svg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .section1 {
+    width: 90vw;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-right: 10vw;
+  }
+  .element {
+    margin: 20px 0;
+    width: 90vw;
+  }
+  
+  .subsection1 {
+    width: 90%;
+  }
+  
+  .subsection1 h1 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .subsection1 p {
+    font-style: 16px;
+    font-weight: 400;
+  }
+  
+  .subsection1 button {
+    margin-left: -0.6%;
+  }
+  .subsection1 button {
+    background-color: var(--secondary);
+    color: #6b6b6b;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
+  .subsection1 button  img{
+    width: 30%;
+    margin-left: 5px;
+  }
+  
+  
+  .section2 {
+    width: 90%;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    float: left;
+    overflow: hidden;
+    height: auto;
+    margin-right: 3vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .subsection {
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .circle-container {
+    z-index: 100;
+    text-align: right;
+    position: absolute;
+    left: 0.3rem;
+  }
+  
+  .circle {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    background-color: var(--primary-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid var(--secondary);
+  }
+  
+  .circle h1 {
+    color: var(--primary);
+  }
+  
+  .subsection p {
+    background-color: var(--secondary-background);
+    border: 2px solid var(--secondary);
+    border-radius: 0 50px 50px 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 75vw;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+    padding-left: 2rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+  }
+  .slick-prev:before, .slick-next:before{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .subsection p {
+    padding-left: 4rem;
+    right: -5px;
+  }
+}
+/****************************************** Resources ***************************************/
+.resources {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../Assets/Images/Media Background.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+}
+
+.resources-heading {
+  color: var(--primary);
+  border-bottom: 2px solid var(--secondary);
+  font-size: xx-large;
+  font-weight: 450;
+  display: flex;
+  justify-content: center;
+  margin-top: -5vh;
+}
+
+.resources-options {
+  display: flex;
+  margin-top: -5vh;
+}
+
+.resources-option {
+  width: 20vw;
+  height: 60vh;
+  background-color: var(--secondary-background);
+  margin: 0 1.5vw;
+}
+
+.resources-option h1 {
+  color: var(--secondary);
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+
+.resources p {
+  color: var(--primary);
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.img1 {
+  background-image: url("../../Assets/Images/Media1.svg");
+}
+
+.img2 {
+  background-image: url("../../Assets/Images/Media2.svg");
+}
+
+.img3 {
+  background-image: url("../../Assets/Images/Media3.svg");
+}
+
+.img4 {
+  background-image: url("../../Assets/Images/Media4.svg");
+}
+
+.section {
+  padding: 15px;
+  max-height: 25vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 19vw;
+  height: 20vh;
+  margin-top: 3vh;
+}
+
+.section::-webkit-scrollbar {
+  width: 1.2vw;
+}
+
+.section::-webkit-scrollbar-track {
+  background: transparent;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+.section::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 10px;
+  height: 10px;
+}
+.Resource-button {
+  width: 15vw;
+  padding: 20px 15px;
+  background-color: var(--secondary);
+  color: #6b6b6b;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Resource-button img{
+  margin-left: 5px;
+}
+
+.botton-position {
+  position: absolute;
+  top: -5vh;
+  right: 29.7vw;
+}
+
+/* For Mobile and tablet Phone */
+@media screen and (max-width: 1020px){
+  .resources {
+    height: 750px;
+    width: 100%;
+    background-image: url("../../Assets/Images/Media Background.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+  }
+  
+  .resources-heading {
+    color: var(--primary);
+    border-bottom: 2px solid var(--secondary);
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+  }
+  
+  .resources-options {
+    display: flex;
+    width: 291px;
+    height: 502px;
+  }
+  
+  .resources-option {
+    width: 291px;
+    height: 502px;
+    background-color: var(--secondary-background);
+    margin: 0 1.5vw;
+  }
+  
+  .resources-option h1 {
+    color: var(--secondary);
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  
+  .resources p {
+    color: var(--primary);
+  }
+  
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    height: 291px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .img1 {
+    background-image: url("../../Assets/Images/Media1.svg");
+  }
+  
+  .img2 {
+    background-image: url("../../Assets/Images/Media2.svg");
+  }
+  
+  .img3 {
+    background-image: url("../../Assets/Images/Media3.svg");
+  }
+  
+  .img4 {
+    background-image: url("../../Assets/Images/Media4.svg");
+  }
+  
+  .section {
+    padding: 15px;
+    max-height: 205px;
+    overflow: hidden;
+    width: 285px;
+    height: 400px;
+    margin-top: 1vh;
+  }
+  
+  .botton-position {
+    position: relative;
+    top: 15px;
+    right: 5%;
+  }
+  .Resource-button{
+    background-color: var(--secondary);
+    color: #6b6b6b;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+  }
+  .Resource-button img{
+    width: 30%;
+    margin-left: 5px;
+  }
+}
+
+/************************************************ About Us ***************************************/
+.about-us {
+  background-image: url("../../Assets/Images/Calculator Background.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.about {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+}
+
+.about h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.about p {
+  font-weight: 300;
+  color: var(--primary);
+  margin-bottom: 5%;
+}
+
+.about button {
+  width: 35%;
+  margin-left: -0.8%;
+}
+
+.about-logo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-heading {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-top: 10vh;
+}
+
+.about-logo img {
+  height: 100%;
+}
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+  .about-us {
+    background-image: url("../../Assets/Images/Calculator Background.svg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .about {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .about h1 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  
+  .about p {
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--primary);
+    margin-bottom: 5%;
+  }
+  
+  .about button {
+    width: 100px;
+    padding: 10px 10px;
+    margin-left: -0.8%;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .about button img{
+    width: 30%;
+  }
+  
+  .about-logo {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  .logo-heading {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+
+}
+
+/************************************************ Social Media ***************************************/
+.social-media {
+  background-image: url("../../Assets/Images/Socail Media Background.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.social-media-options {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-options {
+  display: flex;
+}
+
+.social-option1 {
+  width: 141px;
+  height: 75vh;
+  background-color: var(--primary-background);
+  justify-content: center;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.social-option2 {
+  color: var(--secondary);
+  display: flex;
+  height: 75vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.social-option2 h1 {
+  font-weight: 400;
+  font-size: 35px;
+  padding: 10px 10px;
+  background: rgba(154, 153, 140, 0.5);
+  margin-left: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-media-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-media-content h1 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.social-media-content p {
+  color: var(--primary);
+  font-weight: 300;
+  padding-top: 2%;
+  margin-right: 10%;
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+  .social-media {
+    background-image: url("../../Assets/Images/Socail Media Background.svg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  
+  .social-media-options {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .social-options {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-option1 {
+    width: 20%;
+    height: 50vh;
+    background-color: var(--primary-background);
+    justify-content: center;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+  
+  .social-option2 {
+    color: var(--secondary);
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+  }
+  
+  .social-option2 h1 {
+    font-weight: 400;
+    font-size: 35px;
+    padding: 10px 10px;
+    background: rgba(154, 153, 140, 0.5);
+    margin-left: -15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .social-media-content {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  
+  .social-media-content h1 {
+    font-weight: 400;
+    font-size: 30px;
+  }
+  
+  .social-media-content p {
+    color: var(--primary);
+    font-weight: 300;
+    padding-top: 5%;
+    margin-right: 0%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .social-option1{
+    width: 40%;
+  }
+}

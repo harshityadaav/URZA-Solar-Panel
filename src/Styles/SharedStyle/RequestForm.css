@@ -1,0 +1,264 @@
+.requestform {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-image: url("../../Assets/Images/Rectangle\ 56.svg");
+  scroll-snap-align: start;
+}
+
+.requestform-quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1rem;
+  width: 45%;
+  height: 90%;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--secondary);
+}
+.iconphoto {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.iconphoto p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+.requestform-quote h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.quote form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.quote input[type="text"],
+.quote input[type="email"] {
+  background-color: var(--secondary);
+  width: 100%;
+  height: 2rem;
+  border: none;
+  border-bottom: 0.02rem solid var(--primary-background);
+  text-align: left;
+  margin-top: 1rem;
+}
+input::placeholder{
+  color: var(--primary-background);
+}
+input:focus{
+  outline: none;
+}
+.quote select {
+  margin-top: 1rem;
+  background-color: var(--secondary);
+  width: 13.375rem;
+  height: 2.8125rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border: 0.02rem solid var(--primary-background);
+}
+.quote .optiontext {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+#option {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+#option label {
+  padding-right: 1rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+.requestform-text .headingtext {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: normal;
+  margin: 1rem;
+  color: var(--htag-color);
+}
+.requestform-text h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: normal;
+  margin: 1rem;
+  color: var(--htag-color);
+}
+.requestform-text p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 142%;
+  margin: 1rem;
+  color: var(--htag-color);
+}
+.requestform-text {
+  flex: 0.85;
+  margin: 2rem;
+}
+
+#submit {
+  width: 8.75rem;
+  height: 2.5rem;
+  background-color: var(--primary-background);
+  color: var(--secondary);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+}
+
+  /* For Mobile Screen */
+  @media screen and (max-width: 1020px){
+    .requestform {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url("../../Assets/Images/Rectangle\ 56.svg");
+      width: 100%;
+    }
+    
+    .requestform-quote {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border: 1rem;
+      width: 90%;
+      height: auto;
+      margin-top: 0%;
+      margin-bottom: 10%;
+      padding: 1rem;
+      background-color: var(--secondary);
+    }
+    .iconphoto {
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      width: 90%;
+    }
+    
+    .iconphoto p {
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+    .icon-photo{
+      margin-bottom: 15px;
+    }
+    .requestform-quote h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: normal;
+    }
+    
+    .quote {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .quote form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .quote input[type="text"],
+    .quote input[type="email"] {
+      background-color: var(--secondary);
+      width: 100%;
+      height: 2rem;
+      border: none;
+      border-bottom: 0.02rem solid var(--primary-background);
+      text-align: left;
+      margin-top: 1rem;
+    }
+    input:focus{
+      outline: none;
+    }
+    .quote select {
+      margin-top: 1rem;
+      background-color: var(--secondary);
+      width: 13.375rem;
+      height: 2.8125rem;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      border: 0.02rem solid var(--primary-background);
+    }
+    .quote .optiontext {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    #option {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+    
+    #option label {
+      padding-right: 1rem;
+      font-size: 0.9375rem;
+      font-weight: 400;
+    }
+    .requestform-text .headingtext {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: normal;
+      margin: 0rem;
+      color: var(--htag-color);
+      margin: 1rem, 0rem;
+      margin-top: 5%;
+    }
+    .requestform-text h2 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: normal;
+      margin: 1rem 0rem;
+      color: var(--htag-color);
+    }
+    .requestform-text p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 142%;
+      margin: 0rem;
+      color: var(--htag-color);
+    }
+    .requestform-text {
+      flex: 0.85;
+      margin: 0rem;
+      width: 90%;
+    }
+    
+    #submit {
+      width: 8.75rem;
+      height: 2.5rem;
+      background-color: var(--primary-background);
+      color: var(--secondary);
+      font-size: 0.9375rem;
+      font-weight: 400;
+      cursor: pointer;
+      border: none;
+    }
+  }

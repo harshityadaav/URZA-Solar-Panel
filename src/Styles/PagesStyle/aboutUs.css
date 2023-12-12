@@ -1,0 +1,633 @@
+ /* ******************************** Hero ****************************************** */
+ .about-us-hero{
+    background-image: url("../../Assets/Images/Rectangle\ 2.png");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+}
+.about-us-hero h1{
+   color: var(--secondary);
+   font-size: 135px;
+   padding-top: 36vh;
+   font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 5px var(--secondary);
+    -webkit-text-fill-color: transparent;  
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+    .about-us-hero{
+        height: 257px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .about-us-hero h1{
+       color: var(--secondary);
+       font-size: 48px;
+       height: 47px;
+       padding-top: 110px;
+       font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-text-stroke: 1.5px var(--secondary);
+        -webkit-text-fill-color: transparent;  
+    }
+}
+
+/* ********************************  Product Completed   ****************************************** */
+
+.product-completed{
+    background-image: url("../../Assets/Images/Rectangle\ 179.png");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    padding: 3%;
+    position: relative;
+}
+.completed-numbers{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+}
+.number{
+    margin: 3%;
+    width: 20%;
+}
+.number h1{
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 2.7rem;
+}
+.number p{
+    color: var(--primary);
+    font-weight: 300;
+    margin-top: 5px;
+}
+.completed-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5vh;
+    padding: 5% 0%;
+   
+}
+.completed-photos{
+    margin-left: 3.5vw;
+    width: auto;
+    height: 33vh;
+    margin-top: -30vh;
+}
+.completed-photos img{
+   height: 65vh; 
+}
+
+
+.completed-right{
+    height: 60vh;
+    overflow: scroll;
+    margin-left: 5%;
+    overflow-x: hidden;
+    margin-right: 3vw;
+    width: 60vw;
+}
+
+.completed-right::-webkit-scrollbar {
+    width: 12px; 
+  } 
+  
+  .completed-right::-webkit-scrollbar-thumb {
+    background-color: var(--secondary); 
+    border-radius: 6px; 
+  } 
+  .completed-right::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.20);;
+  }
+.completed-right p{
+    color: var(--primary);
+    font-weight: 300;
+    max-height: 60vh;
+    padding-bottom: 2%;
+    padding-right: 2%;
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+    .product-completed{
+        background-image: url("../../Assets/Images/Rectangle\ 179.png");
+        height: auto;
+        width: 100%;
+        padding: 5%;
+        background-size: cover;
+        background-position: center;
+        display: auto;
+        position: relative;
+    }
+    .completed{
+        display: flex;
+        align-items: center;
+    }
+    .completed-numbers{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 50%;
+    }
+    .number{
+        margin: 5%;
+        width: auto;
+    }
+    .number h1{
+        color: var(--secondary);
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .number p{
+        color: var(--primary);
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: -15px;
+    }
+    .mobile-completed-img{
+        width: 52%;
+        height: auto;
+        margin-right: 2%;
+    }
+    .completed-text{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0vh;
+    }
+    .completed-photos{
+        display: none;
+        
+    }
+    .completed-right{
+        height: 407px;
+        overflow: scroll;
+        margin-left: 0%;
+        overflow-x: hidden;
+        margin-right: 0%;
+        width: 100%;
+    }
+    
+    .completed-right::-webkit-scrollbar {
+        width: 12px; 
+      } 
+      
+      .completed-right::-webkit-scrollbar-thumb {
+        background-color: var(--secondary); 
+        border-radius: 6px; 
+      } 
+      .completed-right::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.20);;
+      }
+    .completed-right p{
+        color: var(--primary);
+        font-weight: 300;
+        max-height: 60vh;
+        padding-bottom: 2%;
+        padding-right: 2%;
+    }
+}
+
+/*************************************** Founder Space *************************************** */
+.founder-space{
+    height: 100vh;
+    background-color: var(--secondary-background);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.founder-heading{
+    font-weight: 500;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+
+} 
+
+ .founder-content{
+    display: flex;
+    justify-content: center;
+}
+.founder-photo{
+    width: 45vw;
+}
+.founder-img{
+    height: 78vh;
+    width: 45vw;
+}
+
+.founder-text{
+    background-color: var(--secondary);
+    color: var(--primary-background);
+    height: 77vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: -0.3vw;
+}
+.founder-para{
+    margin-top:3rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+    padding-right: 2rem;
+    overflow-y: scroll;
+    width: 40vw;
+}
+.founder-para p{
+    margin-bottom: 2rem;
+}
+
+.founder-para::-webkit-scrollbar {
+    width: 20px; 
+  } 
+  
+  .founder-para::-webkit-scrollbar-thumb {
+    background-color:var(--primary-background);
+    border-radius: 12px; 
+  } 
+  .founder-para::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset; 
+  }
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+    .founder-space{
+        height: auto;
+        background-color: var(--secondary-background);
+        scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .founder-heading{
+        font-weight: 500;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    
+    } 
+    
+     .founder-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .founder-photo{
+        width: 95vw;
+        padding-left: 5%;
+    }
+    .founder-img{
+        height: 295px;
+        width:95vw;
+    }
+    
+    .founder-text{
+        background-color: var(--secondary);
+        color: var(--primary-background);
+        height: 407px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+    .founder-para{
+        margin-top:2rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        padding-right: 1rem;
+        overflow-y: scroll;
+        width: 85%;
+    }
+    .founder-para p{
+        margin-bottom: 2rem;
+    }
+    
+    .founder-para::-webkit-scrollbar {
+        width: 20px; 
+      } 
+      
+      .founder-para::-webkit-scrollbar-thumb {
+        background-color:var(--primary-background);
+        border-radius: 12px; 
+      } 
+      .founder-para::-webkit-scrollbar-track {
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset; 
+      }
+}
+
+/***************************************Our Partners*************************************** */
+.our-partners{
+    height: 100vh;
+    background-color: var(--primary-background);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.partners-heading{
+    font-weight: 500;
+    font-size: 3rem;
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    padding-top: 3%;
+    height: 20vh;
+}
+.logos{
+  padding: 5vh 5vw;
+}
+  .logos1{
+     margin-top: -1rem;
+  }
+.logo {
+    width: 12rem; 
+    margin: 4.5rem;
+  }
+.logo2{
+    width: 7rem;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+}
+.logo9{
+    width: 5.5rem;
+    margin-left: 6rem;
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
+}
+.logo11{
+    width: 7rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+}
+.logo4{
+    width: 8rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+}
+.logo8{
+    width: 10rem;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+}
+
+.logo10{
+    width: 10rem;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+}
+.logo6{
+    width: 15rem;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4.5rem;
+    margin-right: 4rem;
+}
+  
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+    .our-partners{
+        height: auto;
+        background-color: var(--primary-background);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .partners-heading{
+        font-weight: 600;
+        font-size: 24px;
+        display: flex;
+        padding: 2%;
+        justify-content: center;
+        padding-top: 10%;
+        height: auto;
+    }
+    .logos{
+      padding: 2.5% 5%;
+    }
+      .logos1{
+         margin-top: 0;
+      }
+    .logo {
+        width: 12rem; 
+        margin: 4.5rem;
+      }
+    .logo2{
+        width: 4rem;
+        margin-left: 6rem;
+        margin-top: 2.5rem;
+        margin-bottom: 4.5rem;
+    }
+    .logo9{
+        width: 3rem;
+        margin-left: 8rem;
+        margin-top: 3.5rem;
+        margin-bottom: 4rem;
+    }
+    .logo11{
+        width: 5rem;
+        margin-left: 6rem;
+        margin-top: 4rem;
+        margin-right: 4rem;
+        margin-bottom: 4.5rem;
+    }
+    .logo4{
+        width: 8rem;
+        margin-left: 6rem;
+        margin-top: 4rem;
+        margin-right: 8rem;
+        margin-bottom: 4.5rem;
+    }
+    .logo8{
+        width: 10rem;
+        margin-left: 5rem;
+        margin-top: 4rem;
+        margin-bottom: 4.5rem;
+        margin-right: -10rem;
+    }
+    
+    .logo10{
+        width: 10rem;
+        margin-left: 5rem;
+        margin-top: 4rem;
+        margin-bottom: 4.5rem;
+    }
+    .logo6{
+       visibility: hidden;
+    }
+    .logo5{
+        margin-left: 8rem;
+    }
+    .logo7{
+        visibility: hidden;
+    }
+}
+
+/***************************************Our Team*************************************** */
+.our-team {
+    background-image: url("../../Assets/Images/Rectangle 55.png");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-heading {
+    font-weight: 500;
+    font-size: 3.2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% 5%;
+}
+
+
+
+.team-images {
+   width: 90%;
+   color: var(--primary);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   float: left;
+   overflow: hidden;
+   height: 300px;
+   margin-top: 1.5rem;
+}
+
+.slide-container{
+   width: 300px;
+   height: 300px;
+}
+
+.image-container {
+    width: 400px;
+    height: 300px;
+}
+.image-container>img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.para {
+    color: var(--primary);
+    font-weight: 350;
+    width: 90%;
+    margin-bottom: 3rem;
+}
+
+/* For Mobile Screen */
+@media screen and (max-width: 1020px){
+    .our-team {
+        background-image: url("../../Assets/Images/Rectangle 55.png");
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        scroll-snap-align: start;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .team-heading {
+        font-weight: 500;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    
+    .team-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0% 5%;
+    }
+    
+    
+    
+    .team-images {
+       width: 90%;
+       color: var(--primary);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       float: left;
+       overflow: hidden;
+       height: 278px;
+       margin-top: 1.5rem;
+    }
+    
+    .slide-container{
+       width: 273px;
+       height: 273px;
+    }
+    
+    .image-container {
+        width: 400px;
+        height: 300px;
+    }
+    .image-container>img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+    }
+    
+    .para {
+        color: var(--primary);
+        font-weight: 350;
+        width: 90%;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
