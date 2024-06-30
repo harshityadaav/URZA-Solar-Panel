@@ -29,8 +29,8 @@ const Hero = () => {
 
   const [hoveredIconIndex, setHoveredIconIndex] = useState();
   const contactDetails = [
-    { textType: "1234567890", icon: call, top: "45%" }, // Call
-    { textType: "abc@gmail.com", icon: mail, top: "50%" }, // mail
+    { textType: "+91-8126475070", icon: call, top: "45%" }, // Call
+    { textType: "urzasol@gmail.com", icon: mail, top: "50%" }, // mail
     { textType: "Dehradun, India", icon: location, top: "55%" }, // location
   ];
 

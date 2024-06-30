@@ -227,8 +227,8 @@ const Footer = () => {
       </div>
       <div className="bottom">
         Powered By&nbsp;
-        <a target="_blank" href="https://webreate.com/">
-          Webreate
+        <a target="_blank" href="">
+          Harshit Yadav
         </a>
       </div>
     </div>
