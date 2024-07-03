@@ -225,12 +225,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bottom">
-        Powered By&nbsp;
-        <a target="_blank" href="">
-          Harshit Yadav
-        </a>
-      </div>
     </div>
   );
 };
